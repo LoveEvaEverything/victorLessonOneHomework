@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		html,body{
+			margin: 0px;
+			height: 100%;
+			background-color: #F2F8FF
+		}
+		.title_class{
+			color: white;
+			background: #333333;
+			height: 10%;
+
+		}
+
+		.menu_class{
+			background: white;
+			width: 10%;
+			height: 85%;
+			float: left;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.content_class{
+			background: white;
+			height: 85%;
+			border-radius: 10px;
+		}
+
+		.bottom_class{
+			background: #333333;
+			height: 5%;
+		}
+
+		#title_id{
+			text-align: center;
+			font-size: 7vh;
+		}
+
+		.menu_item{
+			padding-top: 2vh;
+			padding-bottom: 2vh;
+			margin-top: 45%;
+			background:#333333;
+			font-size: 2vh;
+			color: white;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+
+		#menu_frame{
+			text-align: center;
+			width: 100vw;
+		}
+
+		.menu_item:hover{
+			background-color: #555555;
+            transform: scale(1.01);
+		}
+
+		iframe{
+			width: 90%;
+			height: 100%;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		function updateContent(url){
+			document.getElementById('iframe_id').src = url;
+
+		}
+	</script>
+</head>
+<body>
+	<div class="title_class">
+		<div id="title_id">Victor's Website</div>
+	</div>
+	<div class="menu_class">
+		<div id="menu_frame">
+			<div class="menu_item" onclick="updateContent('calculatorhw.html')">Calculator</div>
+			<div class="menu_item" onclick="updateContent('calculator.html')">Test 02</div>
+			<div class="menu_item">Test 03</div>
+			<div class="menu_item">Test 04</div>
+			<div class="menu_item">Test 05</div>
+		</div>
+	</div>
+	<div class="content_class">
+		<iframe frameborder = 0 id="iframe_id">
+
+		</iframe>
+	</div>
+	<div class="bottom_class"></div>
+</body>
+</html>
